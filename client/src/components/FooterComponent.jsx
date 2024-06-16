@@ -13,7 +13,7 @@ export default function FooterComponent() {
               className="self-center whitespace-nowrap text-lg sm:text-xl font-semibold dark:text-white"
             >
               <span className="px-2 py-1 bg-gradient-to-r from-blue-300 via-mint-500 to-purple-300 rounded-lg">
-                Ram Asodhi
+                Ram Charan Reddy Asodhi
               </span>
             </Link>
           </div>

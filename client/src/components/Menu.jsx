@@ -29,7 +29,7 @@ export default function Menu() {
           className="ml-9 mr-4 h-8 sm:h-9 rounded-full"
         />
         <div className="flex flex-col self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
-          <p>Ram Asodhi</p>
+          <p>Ram Charan Reddy Asodhi</p>
           <span className="text-sm text-slate-500">Full Stack Developer</span>
         </div>
       </NavbarBrand>
