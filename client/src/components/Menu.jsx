@@ -11,12 +11,14 @@ import {
   Button,
 } from 'flowbite-react';
 import { HiArrowRight, HiChevronDown } from 'react-icons/hi';
+import { ImGithub } from 'react-icons/im';
+import { useScroll } from '../ScrollContext.jsx';
 import condoSoftware from '/src/assets/condo-software.png';
 import decentralize from '/src/assets/decentralize.png';
-import { ImGithub } from 'react-icons/im';
 
 export default function Menu() {
   const [isProjectsDropdownOpen, setIsProjectsDropdownOpen] = useState(false);
+  const { scrollTo } = useScroll();
 
   const toggleProjectsDropdown = () => {
     setIsProjectsDropdownOpen(!isProjectsDropdownOpen);
@@ -34,10 +36,16 @@ export default function Menu() {
 
         <NavbarToggle />
         <NavbarCollapse className="mx-auto">
-          <NavbarLink href="/" className="text-black mt-2">
+          <NavbarLink
+            onClick={() => scrollTo('home')}
+            className="text-black mt-2 cursor-pointer"
+          >
             Home
           </NavbarLink>
-          <NavbarLink href="/About" className="text-black mt-2">
+          <NavbarLink
+            onClick={() => scrollTo('about')}
+            className="text-black mt-2 cursor-pointer"
+          >
             About
           </NavbarLink>
           <MegaMenuDropdownToggle
@@ -47,10 +55,13 @@ export default function Menu() {
             Projects
             <HiChevronDown className="ml-2" />
           </MegaMenuDropdownToggle>
-          <NavbarLink href="/Resume" className="text-black mt-2">
+          <NavbarLink
+            onClick={() => scrollTo('resume')}
+            className="text-black mt-2 cursor-pointer"
+          >
             Resume
           </NavbarLink>
-          <NavbarLink href="/Contact">
+          <NavbarLink onClick={() => scrollTo('contact')}>
             <Button
               className="rounded-lg text-black bg-gradient-to-r from-blueToGreenStart to-blueToGreenEnd mb-1"
               outline
