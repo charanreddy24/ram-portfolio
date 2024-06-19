@@ -1,9 +1,12 @@
 import React from 'react';
+import { Button } from 'flowbite-react';
+import { ImGithub } from 'react-icons/im';
+import { HiArrowRight, HiChevronDown } from 'react-icons/hi';
 
 const Resume = () => {
   return (
     <main className="font-sans text-base leading-relaxed">
-      <header className="bg-[#EAE0D5] py-16">
+      <header className="bg-[#EAE0D5] py-8">
         <div className="max-w-4xl w-11/12 mx-auto text-center">
           <h2 className="text-3xl mb-4">Professional Summary</h2>
           <p>
@@ -19,19 +22,19 @@ const Resume = () => {
       </header>
 
       <section className="bg-[#F5E663] pl-1">
-        <div className="max-w-4xl w-11/12 mx-auto py-16 border-b border-dashed border-[#343434]">
+        <div className="max-w-4xl w-11/12 mx-auto py-8">
           <h2 className="text-3xl mb-4">Work Experience</h2>
           <section className="grid grid-cols-1 lg:grid-cols-3 gap-5">
             <div className="col-span-3">
-              <h3 className="mb-1">
+              <h3 className="mb-1 font-semibold">
                 Tata Consultancy Services(TCS), Hyderabad{' '}
               </h3>
-              <p className="italic">
+              <p className="italic text-teal-700">
                 Jun 2020 to Dec 2022 <br /> Full Stack Software Developer
               </p>
             </div>
             <div className="col-span-3">
-              <h4 className="font-semibold mt-2 mb-2">
+              <h4 className="font-semibold mb-2">
                 Key Contributions and Significant Advancements in Client
                 Service:
               </h4>
@@ -122,15 +125,197 @@ const Resume = () => {
         </div>
       </section>
 
+      <section className="bg-[#d3b6ff] pl-1">
+        <div className="max-w-4xl w-11/12 mx-auto py-8">
+          <h2 className="text-3xl mb-4">Projects</h2>
+          <section className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+            <div className="col-span-3">
+              <h3 className="mb-1 font-bold">
+                Condominium Security Operations Software
+              </h3>
+              <p className="italic">Full Stack Developer</p>
+              <div className="flex justify-start items-center space-x-4">
+                <a
+                  href="https://github.com/charanreddy24/condo-pulse-repo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 text-black"
+                >
+                  <Button
+                    type="button"
+                    outline
+                    className="inline-flex items-center w-32 mt-2 rounded-lg text-center text-xs font-medium text-white bg-gradient-to-r from-blueToGreenStart to-blueToGreenEnd"
+                  >
+                    <ImGithub className="text-2xl mr-2" />
+                    <span>GitHub</span>
+                  </Button>
+                </a>
+                <a
+                  href="https://condo-concierge.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    type="button"
+                    outline
+                    className="inline-flex items-center w-32 mt-2 rounded-lg text-center text-xs font-medium text-white bg-gradient-to-r from-blueToGreenStart to-blueToGreenEnd hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-700"
+                  >
+                    Domain
+                    <HiArrowRight className="ml-2" />
+                  </Button>
+                </a>
+              </div>
+            </div>
+            <div className="col-span-3 ml-6">
+              <ul className="list-disc list-inside text-justify space-y-1">
+                <li>
+                  <strong>Real-time Chat Application Development:</strong>{' '}
+                  Implemented real-time communication features using Socket.io
+                  Client.
+                </li>
+                <li>
+                  <strong>Frontend Development:</strong> Developed and
+                  maintained frontend web applications using HTML, Tailwind CSS,
+                  JavaScript, React.js, TypeScript, Vite, and Redux.
+                </li>
+                <li>
+                  <strong>State Management:</strong> Implemented Redux for
+                  efficient state management, ensuring seamless persistence of
+                  user data.
+                </li>
+                <li>
+                  <strong>User Interface Enhancement:</strong> Utilized Flowbite
+                  React, Framer Motion, React Hot Toast, React Icons, React
+                  Quill, React Circular Progress bar, and React Draggable to
+                  create a dynamic and responsive user interface.
+                </li>
+                <li>
+                  <strong>API and Authentication:</strong> Created RESTful APIs
+                  using Node.js and Express, and integrated Firebase and JWT
+                  tokens for secure authentication.
+                </li>
+                <li>
+                  <strong>Data Management:</strong> Employed MongoDB for
+                  efficient data storage and retrieval, ensuring scalability and
+                  performance.
+                </li>
+                <li>
+                  <strong>Middleware Configuration and Error Handling:</strong>{' '}
+                  Configured middleware functions in Express.js to handle errors
+                  and other functionalities seamlessly.
+                </li>
+                <li>
+                  <strong>Version Control:</strong> Managed source control
+                  repositories with Git, implementing effective branching
+                  strategies and pull request workflows.
+                </li>
+                <li>
+                  <strong>Development Tools:</strong> Utilized additional
+                  backend packages such as @aws-sdk/client-s3,
+                  @aws-sdk/s3-request-presigner, Bcryptjs, Cookie-parser, Cors,
+                  Dotenv, Multer, Node-schedule, Socket.io, Jsonwebtoken, and
+                  Moment for enhanced functionality.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+            <div className="col-span-3">
+              <h3 className="mb-1 font-bold mt-4">
+                Visualization of Blockchain Decentralization
+              </h3>
+              <p className="italic">React Developer</p>
+              <div className="flex justify-start items-center space-x-4">
+                <a
+                  href="https://github.com/sm86/destake/tree/main/react-frontend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 text-black"
+                >
+                  <Button
+                    type="button"
+                    outline
+                    className="inline-flex items-center w-32 mt-2 rounded-lg text-center text-xs font-medium text-white bg-gradient-to-r from-blueToGreenStart to-blueToGreenEnd"
+                  >
+                    <ImGithub className="text-2xl mr-2" />
+                    <span>GitHub</span>
+                  </Button>
+                </a>
+                <a
+                  href="https://decentralize.fyi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    type="button"
+                    outline
+                    className="inline-flex items-center w-32 mt-2 rounded-lg text-center text-xs font-medium text-white bg-gradient-to-r from-blueToGreenStart to-blueToGreenEnd"
+                  >
+                    Domain
+                    <HiArrowRight className="ml-2" />
+                  </Button>
+                </a>
+              </div>
+            </div>
+            <div className="col-span-3 ml-6">
+              <ul className="list-disc list-inside text-justify space-y-1">
+                <li>
+                  <strong>Research Collaboration:</strong> Spearheaded the
+                  development and deployment of a web application centered
+                  around blockchain decentralization, collaborating closely with
+                  a University of Toronto Ph.D. student.
+                </li>
+                <li>
+                  <strong>Frontend Development:</strong> Developed a
+                  well-designed and testable codebase using React.js,
+                  incorporating Material-UI (MUI) components to enhance user
+                  experience.
+                </li>
+                <li>
+                  <strong>Deployment:</strong> Deployed the application on an
+                  Ubuntu machine with Apache HTTP web server, configuring
+                  virtual hosts for seamless backend integration developed in
+                  Flask.
+                </li>
+                <li>
+                  <strong>Backend Deployment:</strong> Implemented backend
+                  deployment with Gunicorn, optimizing performance and
+                  scalability.
+                </li>
+                <li>
+                  <strong>Hosting and Domain Management:</strong> Successfully
+                  hosted the entire application under the domain
+                  decentralize.fyi, demonstrating expertise in full-stack
+                  development, deployment, and hosting.
+                </li>
+                <li>
+                  <strong>Security Implementation:</strong> Ensured secure
+                  communication between frontend and backend services by
+                  implementing SSL encryption protocols such as HTTPS and
+                  TLSv1.2, and generating SSL certificates.
+                </li>
+                <li>
+                  <strong>Code Quality and Version Control:</strong> Maintained
+                  high coding standards by adhering to ESLint rules and
+                  optimized performance by implementing code splitting and
+                  virtual DOM techniques.
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+
       <section
         className="bg-cover bg-top-right pb-24"
         style={{ backgroundImage: "url('/src/assets/education-pic.jpg')" }}
       >
-        <div className="max-w-4xl w-11/12 mx-auto py-16 border-b border-dashed border-[#343434]">
+        <div className="max-w-4xl w-11/12 mx-auto py-8 border-b border-dashed border-[#343434]">
           <h2 className="text-3xl mb-4">Education</h2>
           <section className="mb-6">
             <h3 className="mb-1">Algoma University - Brampton, Ontario</h3>
-            <p className="w-3/5">
+            <p className="w-3/5 italic text-teal-700">
               Graduate in Project Management Program
               <br /> Jan 2023 to Jul 2024
             </p>
@@ -139,7 +324,7 @@ const Resume = () => {
             <h3 className="mb-1">
               Jawaharlal Nehru Technological University - Kakinada, India
             </h3>
-            <p className="w-3/5">
+            <p className="w-3/5 italic text-teal-700">
               Bachelor of Technology in Electronics & Communication Engineering{' '}
               <br /> Jun 2016 to Apr 2020
             </p>
@@ -147,7 +332,7 @@ const Resume = () => {
         </div>
       </section>
 
-      <section className="bg-[#fab073] py-16">
+      <section className="bg-[#fab073] py-8">
         <div className="max-w-4xl w-11/12 mx-auto text-justify">
           <h2 className="text-3xl mb-4">Skills</h2>
           <ul className="list-disc list-inside space-y-2">
@@ -194,7 +379,7 @@ const Resume = () => {
         </div>
       </section>
 
-      <section className="bg-[#839dec] py-16">
+      <section className="bg-[#839dec] py-8">
         <div className="max-w-4xl w-11/12 mx-auto">
           <h2 className="text-3xl mb-4">Certifications</h2>
           <ul className="list-disc list-inside space-y-2">
@@ -221,7 +406,7 @@ const Resume = () => {
         </div>
       </section>
 
-      <section className="bg-[#f3b353] py-16">
+      <section className="bg-[#f3b353] py-8">
         <div className="max-w-4xl w-11/12 mx-auto">
           <h2 className="text-4xl mb-4">Achievements</h2>
           <ul className="list-disc list-inside space-y-2">
@@ -246,10 +431,10 @@ const Resume = () => {
         </div>
       </section>
 
-      <footer className="bg-[#EBCFB2] py-16 ">
+      {/* <footer className="bg-[#EBCFB2] py-8 ">
         <div className="max-w-4xl w-11/12 mx-auto">
           <h2 className="text-3xl mb-8">Let's Keep in Touch!</h2>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4">
             <ul className="list-disc list-inside space-y-2 text-justify">
               <li>
                 Mobile No.{' '}
@@ -296,7 +481,7 @@ const Resume = () => {
             </ul>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </main>
   );
 };
