@@ -22,7 +22,7 @@ const Home = forwardRef((props, ref) => {
             <hr className="mt-10 mx-auto md:mx-10 w-1/2" />
           </div>
         </div>
-        <div className="absolute top-2/3 left-1/2 mt-6 ml-14 md:top-1/3 md:mt-28  md:left-3/4 lg:top-1/3 lg:left-3/4 lg:ml-14 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute top-2/3 left-1/2 mt-6 ml-14 md:top-1/3 md:mt-28  md:left-3/4 lg:top-1/3 lg:left-3/4 lg:ml-14 lg:mt-40 transform -translate-x-1/2 -translate-y-1/2">
           <div className="relative">
             <img
               src={myPicture}
