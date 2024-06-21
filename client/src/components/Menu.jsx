@@ -76,7 +76,7 @@ export default function Menu() {
         <div className="w-full border-t border-gray-200 bg-slate-200 shadow-sm dark:border-gray-600 dark:bg-gray-800">
           <div className="mx-auto grid max-w-screen-xl px-4 py-5 text-sm text-gray-500 md:grid-cols-2 md:px-6 gap-2">
             {/* Project:1 */}
-            <div className="rounded-lg border border-slate-400 bg-slate-300 shadow-lg p-8 text-left flex justify-between">
+            <div className="rounded-lg border border-slate-400 bg-slate-300 shadow-lg p-8 text-left flex flex-col md:flex-row justify-between">
               <div className="flex flex-col justify-between">
                 <p className="mb-5 mr-2 max-w-xl font-semibold leading-tight tracking-tight text-black">
                   Real-Time Chat Application & <br />
@@ -123,14 +123,14 @@ export default function Menu() {
                   <img
                     src={condoSoftware}
                     alt="Condominiums Software"
-                    className="shadow-lg shadow-white h-32 w-56"
+                    className="shadow-lg shadow-white h-32 w-56 mt-4 ml-4 md:mt-0 md:ml-0"
                   />
                 </a>
               </div>
             </div>
 
             {/* Project:2 */}
-            <div className="rounded-lg border border-slate-400 bg-slate-300 shadow-lg p-8 text-left flex justify-between">
+            <div className="rounded-lg border border-slate-400 bg-slate-300 shadow-lg p-8 text-left flex flex-col md:flex-row justify-between">
               <div className="flex flex-col justify-between">
                 <p className="mb-5 max-w-xl font-semibold leading-tight tracking-tight text-black">
                   Visualization of Block-Chain Decentralization
@@ -176,7 +176,7 @@ export default function Menu() {
                   <img
                     src={decentralize}
                     alt="Decentralization of block chains"
-                    className="shadow-lg shadow-white h-32 w-56"
+                    className="shadow-lg shadow-white h-32 w-56 mt-4 ml-4 md:mt-0 md:ml-0"
                   />
                 </a>
               </div>

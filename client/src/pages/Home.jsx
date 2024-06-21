@@ -9,7 +9,6 @@ const Home = forwardRef((props, ref) => {
           <div className="text-center md:text-left text-3xl md:text-7xl p-8 font-serif text-white">
             <div className="text-xl">I'm a</div>
             Full Stack Software Developer
-            {/* <hr className="mt-10 mx-auto md:mx-10 w-1/2" /> */}
             <div className="text-xl mt-4 md:text-pretty">
               with over 4 years of experience in building and maintaining web
               applications using the <br />
@@ -23,12 +22,12 @@ const Home = forwardRef((props, ref) => {
             <hr className="mt-10 mx-auto md:mx-10 w-1/2" />
           </div>
         </div>
-        <div className="absolute top-2/3 left-1/2 md:top-1/2 md:left-3/4 ml-10 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute top-2/3 left-1/2 mt-6 ml-14 md:top-1/3 md:mt-28  md:left-3/4 lg:top-1/3 lg:left-3/4 lg:ml-14 transform -translate-x-1/2 -translate-y-1/2">
           <div className="relative">
             <img
               src={myPicture}
               alt="My Picture"
-              className="shadow-lg shadow-white border-8 size-2/3 md:w-64 md:h-64"
+              className="shadow-lg shadow-white border-8 w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64"
             />
           </div>
         </div>
