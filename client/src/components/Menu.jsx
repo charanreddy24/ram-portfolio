@@ -15,6 +15,7 @@ import { ImGithub } from 'react-icons/im';
 import { useScroll } from '../ScrollContext.jsx';
 import condoSoftware from '/src/assets/condo-software.png';
 import decentralize from '/src/assets/decentralize.png';
+import myPicture from '/src/assets/ram.jpeg';
 
 export default function Menu() {
   const [isProjectsDropdownOpen, setIsProjectsDropdownOpen] = useState(false);
@@ -28,6 +29,11 @@ export default function Menu() {
     <>
       <MegaMenu className="bg-slate-200">
         <NavbarBrand href="/">
+          <img
+            alt=""
+            src={myPicture}
+            className="mr-3 h-6 sm:h-9 rounded-full"
+          />
           <div className="flex flex-col self-center whitespace-nowrap text-2xl font-semibold dark:text-white ml-4">
             <p>Ram Asodhi</p>
             <span className="text-sm text-slate-600">Toronto, Ontario</span>

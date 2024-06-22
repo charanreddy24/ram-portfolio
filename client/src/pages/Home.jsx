@@ -51,8 +51,8 @@ const Home = forwardRef((props, ref) => {
 
   return (
     <div ref={ref}>
-      <div className="relative flex flex-col md:flex-row h-screen">
-        <div className="md:h-screen h-5/6 md:w-4/5 flex items-center bg-[#97bdf7]">
+      <div className="relative flex flex-col md:flex-row h-screen border-b-2 border-blue-600">
+        <div className="md:h-screen h-5/6 md:w-4/5 flex items-center bg-[#4f8df1]">
           <div className="text-center md:text-left text-5xl md:text-7xl p-8 font-serif text-white">
             <div className="text-2xl md:text-pretty md:text-3xl lg:text-xl">
               I'm a
@@ -66,7 +66,7 @@ const Home = forwardRef((props, ref) => {
             </div>
           </div>
         </div>
-        <div className="md:h-full h-1/5 md:w-1/5 flex items-center bg-[#b3f68e] relative overflow-hidden">
+        <div className="md:h-full h-1/5 md:w-1/5 flex items-center bg-[#5df55d] relative overflow-hidden">
           {icons.map((iconObj, index) => (
             <FontAwesomeIcon
               key={index}

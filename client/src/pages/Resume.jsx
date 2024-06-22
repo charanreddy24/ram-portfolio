@@ -6,7 +6,10 @@ import { HiArrowRight, HiChevronDown } from 'react-icons/hi';
 const Resume = forwardRef((props, ref) => {
   return (
     <div ref={ref}>
-      <main className="font-sans text-base leading-relaxed">
+      <main className="font-sans text-base leading-relaxed border-b-2 border-blue-400">
+        <h1 className="text-3xl mt-2 flex items-center justify-center ">
+          Resume
+        </h1>
         <header className="bg-[#EAE0D5] py-8">
           <div className="max-w-4xl w-11/12 mx-auto text-center">
             <h2 className="text-3xl mb-4">Professional Summary</h2>
@@ -32,10 +35,10 @@ const Resume = forwardRef((props, ref) => {
                   Tata Consultancy Services(TCS), Hyderabad{' '}
                 </h3>
                 <p className="italic text-teal-700">
-                  Jun 2020 to Dec 2022 <br /> Full Stack Software Developer
+                  Jan 2021 to Dec 2022 <br /> Full Stack Software Developer
                 </p>
               </div>
-              <div className="col-span-3">
+              <div className="col-span-3 ml-6">
                 <h4 className="font-semibold mb-2">
                   Key Contributions and Significant Advancements in Client
                   Service:
@@ -120,6 +123,62 @@ const Resume = forwardRef((props, ref) => {
                     implemented SSL certificates, automated system tasks with
                     Bash scripts, and addressed vulnerabilities to ensure system
                     integrity.
+                  </li>
+                </ul>
+              </div>
+              <div className="col-span-3">
+                <h3 className="mb-1 font-semibold">
+                  Yash Techonologies, Hyderabad{' '}
+                </h3>
+                <p className="italic text-teal-700">
+                  Jun 2020 to Dec 2020 <br /> DevOps Engineer
+                </p>
+              </div>
+              <div className="col-span-3 ml-6">
+                <h4 className="font-semibold mb-2">
+                  Key Contributions and Significant Advancements in Client
+                  Service:
+                </h4>
+                <ul className="list-disc list-inside text-justify space-y-1">
+                  <li>
+                    <strong>Linux System Administration:</strong> Configured and
+                    optimized RHEL servers with advanced Linux hardening
+                    techniques.
+                  </li>
+                  <li>
+                    <strong>Cloud Infrastructure Management:</strong> Utilized
+                    OpenStack for private cloud setup and Docker for container
+                    operations.
+                  </li>
+                  <li>
+                    <strong>CI/CD Automation:</strong> Automated build and
+                    deployment processes with Jenkins pipelines for
+                    microservices.
+                  </li>
+                  <li>
+                    <strong>Kubernetes Administration:</strong> Configured
+                    SIDE-CAR and AMBASSADOR containers in Kubernetes Pods.
+                  </li>
+                  <li>
+                    <strong>AWS Administration:</strong> Configured and managed
+                    AWS services like EC2, IAM, VPC, and ELBs.
+                  </li>
+                  <li>
+                    <strong>Agile Development:</strong> Designed workflows using
+                    Agile methodologies in Azure DevOps.
+                  </li>
+                  <li>
+                    <strong>Troubleshooting:</strong> Resolved issues in
+                    third-party applications and server components.
+                  </li>
+                  <li>
+                    <strong>Security Enhancement:</strong> Enhanced system
+                    security with SSL certificates and automated tasks using
+                    scripting.
+                  </li>
+                  <li>
+                    <strong>Frontend Technologies Troubleshooting:</strong>{' '}
+                    Addressed frontend issues with HTML, CSS, and JavaScript.
                   </li>
                 </ul>
               </div>
@@ -437,57 +496,7 @@ const Resume = forwardRef((props, ref) => {
           </div>
         </section>
 
-        {/* <footer className="bg-[#EBCFB2] py-8 ">
-        <div className="max-w-4xl w-11/12 mx-auto">
-          <h2 className="text-3xl mb-8">Let's Keep in Touch!</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4">
-            <ul className="list-disc list-inside space-y-2 text-justify">
-              <li>
-                Mobile No.{' '}
-                <a
-                  href="tel:+16474829114"
-                  className="text-whitesmoke no-underline py-2 px-4 rounded text-teal-700 hover:underline"
-                >
-                  +1 (647) 482-9114
-                </a>
-              </li>
-              <li>
-                Address:{' '}
-                <a
-                  href="https://goo.gl/maps/dDyxmPFRKAS7RbVE8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-whitesmoke no-underline py-2 px-4 rounded text-teal-700 hover:underline"
-                >
-                  Scarborough, Toronto, ON
-                </a>
-              </li>
-            </ul>
-            <ul className="list-disc list-inside space-y-2 text-justify">
-              <li>
-                Email{' '}
-                <a
-                  href="mailto:ramcharan2510@gmail.com"
-                  className="text-whitesmoke no-underline py-2 px-4 rounded text-teal-700 hover:underline"
-                >
-                  ramcharan2510@gmail.com
-                </a>
-              </li>
-              <li>
-                Social Media{' '}
-                <a
-                  href="https://www.linkedin.com/in/ram-charan-reddy-2b91b7138"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-whitesmoke no-underline py-2 px-4 rounded text-teal-700 hover:underline"
-                >
-                  LinkedIn
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer> */}
+        {/*  */}
       </main>
     </div>
   );
