@@ -1,5 +1,5 @@
 import React, { forwardRef, useState, useEffect } from 'react';
-import myPicture from '/src/assets/SD.jpeg';
+import myPicture from '/src/assets/Ram_fullPic.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faNodeJs,

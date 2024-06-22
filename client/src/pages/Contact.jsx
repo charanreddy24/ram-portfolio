@@ -2,7 +2,34 @@ import React, { forwardRef } from 'react';
 import { Button, Checkbox, Textarea, Label, TextInput } from 'flowbite-react';
 
 const Contact = forwardRef((props, ref) => {
-  const handleSubmit = () => {};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email2.value,
+      mobile: e.target.mobile.value,
+      comment: e.target.comment.value,
+    };
+
+    try {
+      const response = await fetch('http://localhost:3000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Email sent successfully!');
+      } else {
+        alert('Error sending email.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error sending email.');
+    }
+  };
   return (
     <div ref={ref}>
       <div className="h-max">
@@ -11,7 +38,7 @@ const Contact = forwardRef((props, ref) => {
             <h2 className="text-3xl mb-8 flex items-center justify-center">
               Let's Keep in Touch!
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 ml-12">
               <ul className="list-disc list-inside space-y-2 text-justify">
                 <li className="flex items-center">
                   <span>Mobile No.</span>
