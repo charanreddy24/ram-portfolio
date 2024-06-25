@@ -1,14 +1,33 @@
-import React, { forwardRef } from 'react';
-import { Button, Checkbox, Textarea, Label, TextInput } from 'flowbite-react';
+import React, { forwardRef, useState } from 'react';
+import { Button, Textarea, Label, TextInput, Alert } from 'flowbite-react';
+import { BsLinkedin } from 'react-icons/bs';
+import { BiLogoGmail } from 'react-icons/bi';
+import { FcHome } from 'react-icons/fc';
+import { FaPhoneAlt } from 'react-icons/fa';
 
 const Contact = forwardRef((props, ref) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email2: '',
+    mobile: '',
+    comment: '',
+  });
+
+  const [message, setMessage] = useState('');
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = {
-      name: e.target.name.value,
-      email: e.target.email2.value,
-      mobile: e.target.mobile.value,
-      comment: e.target.comment.value,
+    const emailData = {
+      name: formData.name,
+      email: formData.email2,
+      mobile: formData.mobile,
+      comment: formData.comment,
     };
 
     try {
@@ -17,23 +36,28 @@ const Contact = forwardRef((props, ref) => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(emailData),
       });
 
       if (response.ok) {
-        alert('Email sent successfully!');
+        setMessage('Email sent successfully!');
+        setIsSuccess(true);
+        setFormData({ name: '', email2: '', mobile: '', comment: '' });
       } else {
-        alert('Error sending email.');
+        setMessage('Error sending email.');
+        setIsSuccess(false);
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('Error sending email.');
+      setMessage('Error sending email.');
+      setIsSuccess(false);
     }
   };
+
   return (
     <div ref={ref}>
       <div className="h-max">
-        <main className=" py-8 ">
+        <main className="py-8">
           <div className="max-w-4xl w-11/12 mx-auto">
             <h2 className="text-3xl mb-8 flex items-center justify-center">
               Let's Keep in Touch!
@@ -44,8 +68,9 @@ const Contact = forwardRef((props, ref) => {
                   <span>Mobile No.</span>
                   <a
                     href="tel:+16474829114"
-                    className="ml-2 md:ml-6 text-whitesmoke no-underline py-2 px-4 rounded text-teal-700 hover:underline"
+                    className="ml-2 md:ml-6 text-whitesmoke no-underline py-2 px-4 rounded text-teal-700 hover:underline flex gap-2 items-center"
                   >
+                    <FaPhoneAlt className="text-2xl text-blue-600" />
                     +1 (647) 482-9114
                   </a>
                 </li>
@@ -55,8 +80,9 @@ const Contact = forwardRef((props, ref) => {
                     href="https://goo.gl/maps/dDyxmPFRKAS7RbVE8"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="ml-2 md:ml-10 text-whitesmoke no-underline py-2 px-4 rounded text-teal-700 hover:underline"
+                    className="ml-2 md:ml-10 text-whitesmoke no-underline py-2 px-4 rounded text-teal-700 hover:underline flex gap-2 items-center"
                   >
+                    <FcHome className="text-2xl" />
                     Scarborough, Toronto, ON
                   </a>
                 </li>
@@ -67,8 +93,9 @@ const Contact = forwardRef((props, ref) => {
                   <span>Email</span>
                   <a
                     href="mailto:ramcharan2510@gmail.com"
-                    className="ml-2 md:ml-16 text-whitesmoke no-underline py-2 px-4 rounded text-teal-700 hover:underline"
+                    className="ml-2 md:ml-16 text-whitesmoke no-underline py-2 px-4 rounded text-teal-700 hover:underline flex gap-2 items-center"
                   >
+                    <BiLogoGmail className="text-2xl text-red-500" />
                     ramcharan2510@gmail.com
                   </a>
                 </li>
@@ -78,8 +105,9 @@ const Contact = forwardRef((props, ref) => {
                     href="https://www.linkedin.com/in/ram-charan-reddy-2b91b7138"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="ml-2 text-whitesmoke no-underline py-2 px-4 rounded text-teal-700 hover:underline"
+                    className="ml-2 text-whitesmoke no-underline py-2 px-4 rounded text-teal-700 hover:underline flex gap-2 items-center"
                   >
+                    <BsLinkedin className="text-2xl" />
                     LinkedIn
                   </a>
                 </li>
@@ -105,6 +133,8 @@ const Contact = forwardRef((props, ref) => {
                   className="w-64 md:w-96"
                   required
                   shadow
+                  value={formData.name}
+                  onChange={handleChange}
                 />
               </div>
               <div>
@@ -118,6 +148,8 @@ const Contact = forwardRef((props, ref) => {
                   className="w-64 md:w-96"
                   required
                   shadow
+                  value={formData.email2}
+                  onChange={handleChange}
                 />
               </div>
               <div>
@@ -130,6 +162,8 @@ const Contact = forwardRef((props, ref) => {
                   placeholder="Mobile No. (Optional)"
                   className="w-64 md:w-96"
                   shadow
+                  value={formData.mobile}
+                  onChange={handleChange}
                 />
               </div>
               <div className="max-w-md">
@@ -142,6 +176,8 @@ const Contact = forwardRef((props, ref) => {
                   className="w-64 md:w-96"
                   required
                   rows={4}
+                  value={formData.comment}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -153,6 +189,14 @@ const Contact = forwardRef((props, ref) => {
                 Submit
               </Button>
             </form>
+            {message && (
+              <Alert
+                color={isSuccess ? 'success' : 'failure'}
+                className="mt-4 text-center"
+              >
+                {message}
+              </Alert>
+            )}
           </div>
         </main>
       </div>

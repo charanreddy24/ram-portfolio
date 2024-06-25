@@ -2,6 +2,7 @@ import React, { forwardRef } from 'react';
 import { Button } from 'flowbite-react';
 import { ImGithub } from 'react-icons/im';
 import { HiArrowRight, HiChevronDown } from 'react-icons/hi';
+import eduPic from '/src/assets/education-pic.jpeg';
 
 const Resume = forwardRef((props, ref) => {
   return (
@@ -372,7 +373,7 @@ const Resume = forwardRef((props, ref) => {
 
         <section
           className="bg-cover bg-top-right pb-24"
-          style={{ backgroundImage: "url('/src/assets/education-pic.jpg')" }}
+          style={{ backgroundImage: `url(${eduPic})` }}
         >
           <div className="max-w-4xl w-11/12 mx-auto py-8 border-b border-dashed border-[#343434]">
             <h2 className="text-3xl mb-4">Education</h2>
