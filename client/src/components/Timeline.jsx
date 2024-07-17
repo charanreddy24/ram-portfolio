@@ -86,7 +86,7 @@ export default function TimelineComponent() {
         <Timeline.Point icon={FaCalendarAlt} />
         <Timeline.Content>
           <Timeline.Time className="text-slate-700 font-bold">
-            Jun 2020 - Dec 2020
+            Jun 2018 - Dec 2020
           </Timeline.Time>
           <Timeline.Title className="text-slate-700 ">
             Yash Technologies
