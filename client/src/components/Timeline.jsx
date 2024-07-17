@@ -103,7 +103,7 @@ export default function TimelineComponent() {
         <Timeline.Point icon={FaCalendarAlt} />
         <Timeline.Content>
           <Timeline.Time className="text-slate-700 font-bold">
-            Jun 2016 - May 2020
+            Jun 2014 - Apr 2018
           </Timeline.Time>
           <Timeline.Title className="text-slate-700 ">
             Jawaharlal Nehru Technological University, Kakinada
