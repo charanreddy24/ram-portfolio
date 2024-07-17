@@ -59,10 +59,20 @@ const Home = forwardRef((props, ref) => {
             </div>
             Full Stack Software Developer
             <div className="text-2xl mt-4 md:text-pretty md:text-3xl lg:text-xl">
-              with over 4 years of experience in building and maintaining web
-              applications using the <br />
-              MERN stack (MongoDB, Express.js, React.js, Node.js). <br />
-              Explore my work and get to know more about my skills and projects.
+              <p>
+                with over 5 years of experience in building and maintaining web
+                applications
+              </p>{' '}
+              <br />
+              <p className="italic">
+                Full Stack Software Developer | Java | JavaScript. Expertise in
+                APIs | microservices | Spring Boot |<br /> JBOSS | AWS | CI/CD |
+                Docker & Kubernetes | Terraform.
+              </p>
+              <p className=" mt-5">
+                Explore my work and get to know more about my skills and
+                projects.
+              </p>
             </div>
           </div>
         </div>

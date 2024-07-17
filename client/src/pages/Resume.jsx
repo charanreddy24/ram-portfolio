@@ -15,14 +15,16 @@ const Resume = forwardRef((props, ref) => {
           <div className="max-w-4xl w-11/12 mx-auto text-center">
             <h2 className="text-3xl mb-4">Professional Summary</h2>
             <p>
-              Highly skilled Full Stack Developer with over 4 years of
-              experience in designing and implementing web applications.
-              Proficient in MERN stack (MongoDB, Express.js, React.js, Node.js)
-              with extensive experience in Linux system administration, cloud
-              infrastructure management, and CI/CD automation. Adept at
-              developing robust, scalable, and user-centric solutions, and
-              collaborating with cross-functional teams to deliver high-quality
-              projects.
+              Full Stack Software Developer with over 5 years of experience in
+              Java, MERN & MEAN stacks. Expertise in building and managing APIs,
+              microservices, and backend services using Spring Boot and JBOSS.
+              Skilled in AWS cloud services, CI/CD pipelines, Docker,
+              Kubernetes, and Terraform. Proven track record in leading
+              projects, including real-time chat applications and blockchain
+              decentralization tools, utilizing technologies like React.js,
+              Node.js, Python, and Spring Boot. Proficient in agile
+              methodologies and ensuring secure, optimized network
+              communication.
             </p>
           </div>
         </header>
@@ -33,10 +35,10 @@ const Resume = forwardRef((props, ref) => {
             <section className="grid grid-cols-1 lg:grid-cols-3 gap-5">
               <div className="col-span-3">
                 <h3 className="mb-1 font-semibold">
-                  Tata Consultancy Services(TCS), Hyderabad{' '}
+                  Tata Consultancy Services (TCS), Hyderabad
                 </h3>
                 <p className="italic text-teal-700">
-                  Jan 2021 to Dec 2022 <br /> Full Stack Software Developer
+                  Dec 2020 to Dec 2022 <br /> Full Stack Software Developer
                 </p>
               </div>
               <div className="col-span-3 ml-6">
@@ -47,92 +49,95 @@ const Resume = forwardRef((props, ref) => {
                 <ul className="list-disc list-inside text-justify space-y-1">
                   <li>
                     <strong>Network Management System Development:</strong>{' '}
-                    Collaborated with Ericsson, an Irish client, to develop a
-                    robust network management system for monitoring network
-                    elements.
+                    Partnered with Ericsson (Ireland) on network management
+                    system development.
                   </li>
                   <li>
-                    <strong>MERN Stack Implementation:</strong> Led the design
-                    and implementation of software components using the MERN
-                    stack, ensuring real-time monitoring and data analysis.
+                    <strong>Frontend Development:</strong> Developed and
+                    maintained modern web applications using HTML5, CSS3,
+                    JavaScript frameworks (Angular, React.js), and Bootstrap.
+                    Utilized jQuery and JSON for enhanced interactivity.
                   </li>
                   <li>
-                    <strong>Frontend Development:</strong> Developed dynamic and
-                    responsive user interfaces with React.js, CSS, and
-                    TypeScript, significantly enhancing user experience.
+                    <strong>Backend Development:</strong> Built APIs that run on
+                    Spring Boot, conforming to RESTful standards, and
+                    implemented GraphQL for data requisitioning processes.
+                    Developed backend services using Java, Spring Boot, and
+                    JBOSS.
                   </li>
                   <li>
-                    <strong>Server Configuration and Optimization:</strong>{' '}
-                    Configured and optimized Red Hat Enterprise Linux (RHEL)
-                    servers, incorporating advanced Linux hardening techniques
-                    for enhanced security and reliability.
+                    <strong>Microservices:</strong> Implemented microservices
+                    architecture using Spring Boot, Spring Cloud, and managed
+                    services through REST and Apache Kafka message brokers.
                   </li>
                   <li>
-                    <strong>Apache Server Installation:</strong> Compiled and
-                    installed Apache Server from source code, integrating robust
-                    Linux hardening measures.
+                    <strong>AWS Services:</strong> Leveraged AWS cloud services
+                    such as EC2, S3, VPC, IAM, RDS, ALB, SES, Route53, AWS Cloud
+                    Watch, and Lambda. Created multiple VPCs and Subnets,
+                    integrated AWS services with application infrastructure.
                   </li>
                   <li>
-                    <strong>API and Data Management:</strong> Created RESTful
-                    APIs with Node.js and Express for efficient frontend-backend
-                    communication and implemented GraphQL for optimized data
-                    querying and manipulation.
-                  </li>
-                  <li>
-                    <strong>Version Control Management:</strong> Managed
-                    application patches and upgrades using Git, Gerrit, and
-                    GitHub, ensuring seamless version control and team
-                    collaboration.
-                  </li>
-                  <li>
-                    <strong>Unit Testing:</strong> Utilized Jest to write
-                    comprehensive test suites, ensuring system reliability and
-                    robustness.
+                    <strong>Database Management:</strong> Utilized relational
+                    databases like MySQL, Oracle, and MSSQL, and NoSQL databases
+                    like MongoDB. Wrote and optimized SQL queries, PL/SQL for
+                    database interactions.
                   </li>
                   <li>
                     <strong>Containerization and Orchestration:</strong>{' '}
-                    Implemented Docker and Kubernetes for containerization and
-                    orchestration, ensuring system scalability and resilience.
+                    Containerized applications using Docker, orchestrated with
+                    Kubernetes, and utilized Terraform for infrastructure
+                    provisioning.
                   </li>
                   <li>
-                    <strong>Automated Deployment:</strong> Streamlined
-                    development and deployment lifecycle with Jenkins pipelines
-                    tailored for microservices architecture.
+                    <strong>Version Control and CI/CD:</strong> Managed source
+                    code with Git and GitHub, facilitated code reviews through
+                    Gerrit. Automated builds, tests, and deployments using
+                    Jenkins pipelines, integrating SonarQube for code quality
+                    and Nexus Repository for artifact management.
                   </li>
                   <li>
-                    <strong>Load Balancing:</strong> Configured HAproxy for
-                    efficient load balancing across various deployments,
-                    optimizing system performance.
+                    <strong>Monitoring and Logging:</strong> Monitored
+                    applications and infrastructure using Prometheus, visualized
+                    metrics with Grafana, and utilized the ELK Stack
+                    (Elasticsearch, Logstash, Kibana) for log management.
                   </li>
                   <li>
-                    <strong>Cloud Services Administration:</strong> Configured
-                    and administered AWS services, including EC2 instances and
-                    VPCs, supporting system deployment and operation.
+                    <strong>Configuration Management:</strong> Utilized Ansible
+                    for configuration management and provisioning.
                   </li>
                   <li>
-                    <strong>Private Cloud Architecture:</strong> Utilized
-                    OpenStack for private cloud architecture and administration,
-                    meeting specific client requirements.
+                    <strong>Testing:</strong> Conducted unit testing using
+                    JUnit, end-to-end testing using Selenium, and API testing
+                    using Postman.
                   </li>
                   <li>
-                    <strong>Agile Project Management:</strong> Designed project
-                    workflows following Agile methodologies within Azure DevOps,
-                    enabling seamless collaboration and code management.
+                    <strong>Security:</strong> Implemented security measures and
+                    protocols for network infrastructures. Deployed VPNs,
+                    firewalls, and load balancers to optimize and secure network
+                    communication.
                   </li>
                   <li>
-                    <strong>Enhanced System Security:</strong> Generated and
-                    implemented SSL certificates, automated system tasks with
-                    Bash scripts, and addressed vulnerabilities to ensure system
-                    integrity.
+                    <strong>Development Tools:</strong> Worked with IntelliJ,
+                    Eclipse, VS Code, Maven, Ant, and Jenkins CI/CD.
+                  </li>
+                  <li>
+                    <strong>Agile Methodologies:</strong> Worked with Agile
+                    methodologies, using Jira for project management.
+                  </li>
+                  <li>
+                    <strong>Additional Technologies:</strong> Extensive use of
+                    Python, Perl, UNIX Shell Scripting, JavaScript libraries
+                    like jQuery and AngularJS, and frameworks like Node.js,
+                    Express.js, and SASS.
                   </li>
                 </ul>
               </div>
               <div className="col-span-3">
                 <h3 className="mb-1 font-semibold">
-                  Yash Techonologies, Hyderabad{' '}
+                  Yash Technologies, Hyderabad
                 </h3>
                 <p className="italic text-teal-700">
-                  Jun 2020 to Dec 2020 <br /> DevOps Engineer
+                  Jun 2018 to Dec 2020 <br /> Software Developer
                 </p>
               </div>
               <div className="col-span-3 ml-6">
@@ -142,44 +147,75 @@ const Resume = forwardRef((props, ref) => {
                 </h4>
                 <ul className="list-disc list-inside text-justify space-y-1">
                   <li>
-                    <strong>Linux System Administration:</strong> Configured and
-                    optimized RHEL servers with advanced Linux hardening
-                    techniques.
+                    <strong>Server Configuration:</strong> Configured RHEL
+                    servers with advanced hardening techniques, including node
+                    hardening, iptables configuration, and SELinux
+                    configuration. Managed a private cloud setup with OpenStack.
                   </li>
                   <li>
-                    <strong>Cloud Infrastructure Management:</strong> Utilized
-                    OpenStack for private cloud setup and Docker for container
-                    operations.
+                    <strong>Frontend Development:</strong> Proficient in PHP and
+                    design patterns specifically using the Laravel framework.
+                    Experience creating design system component libraries with
+                    tools such as Storybook.
                   </li>
                   <li>
-                    <strong>CI/CD Automation:</strong> Automated build and
-                    deployment processes with Jenkins pipelines for
-                    microservices.
+                    <strong>Backup and Automation:</strong> Developed backup and
+                    restore repositories using Python. Automated build and
+                    deployment processes with Jenkins pipelines for Continuous
+                    Delivery, utilizing pom.xml files for efficient project
+                    builds.
                   </li>
                   <li>
-                    <strong>Kubernetes Administration:</strong> Configured
-                    SIDE-CAR and AMBASSADOR containers in Kubernetes Pods.
+                    <strong>Web Server and Artifact Management:</strong> Managed
+                    Apache Web Server, implemented Single Sign-On (SSO), and
+                    utilized Maven/Nexus Repository for artifact management.
                   </li>
                   <li>
-                    <strong>AWS Administration:</strong> Configured and managed
-                    AWS services like EC2, IAM, VPC, and ELBs.
+                    <strong>Backend Development:</strong> Developed backend
+                    services using Java technologies including J2EE (Servlets),
+                    Spring, Hibernate, and JDBC. Created web services using SOAP
+                    and REST, ensuring proper WSDL and XML configurations.
                   </li>
                   <li>
-                    <strong>Agile Development:</strong> Designed workflows using
-                    Agile methodologies in Azure DevOps.
+                    <strong>Microservices and SDLC:</strong> Followed all phases
+                    of SDLC using Java, Spring Boot, and Hibernate. Implemented
+                    microservices architecture with Spring Cloud and managed
+                    services through REST.
                   </li>
                   <li>
-                    <strong>Troubleshooting:</strong> Resolved issues in
-                    third-party applications and server components.
+                    <strong>Configuration Management:</strong> Employed Chef for
+                    configuration management and provisioning. Implemented
+                    centralized logging with Splunk and Elasticsearch.
                   </li>
                   <li>
-                    <strong>Security Enhancement:</strong> Enhanced system
-                    security with SSL certificates and automated tasks using
-                    scripting.
+                    <strong>Security Enhancements:</strong> Enhanced security
+                    with SSL certificates and utilized HashiCorp Vault for
+                    secrets management. Automated tasks with Bash and Python
+                    scripts.
                   </li>
                   <li>
-                    <strong>Frontend Technologies Troubleshooting:</strong>{' '}
-                    Addressed frontend issues with HTML, CSS, and JavaScript.
+                    <strong>Load Balancing and Incident Management:</strong>{' '}
+                    Implemented HAproxy for load balancing and integrated
+                    PagerDuty for incident management.
+                  </li>
+                  <li>
+                    <strong>Agile Methodologies:</strong> Followed Agile
+                    methodologies using Azure DevOps, fostering team
+                    communication through Slack and Confluence.
+                  </li>
+                  <li>
+                    <strong>CI/CD Pipelines:</strong> Extensive experience with
+                    CI/CD pipelines using Git, Ansible, Puppet, and Jenkins.
+                    Managed source code with Git and GitHub.
+                  </li>
+                  <li>
+                    <strong>Monitoring Solutions:</strong> Familiarity with
+                    monitoring solutions like CloudWatch, CloudTrail, and the
+                    ELK Stack (Elasticsearch, Logstash, Kibana).
+                  </li>
+                  <li>
+                    <strong>Container Technology:</strong> Proficient with
+                    container technology including Docker, Kubernetes, and LXD.
                   </li>
                 </ul>
               </div>
