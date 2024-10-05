@@ -4,40 +4,81 @@ import { FaCalendarAlt } from 'react-icons/fa';
 
 export default function TimelineComponent() {
   return (
-    <Timeline className="p-4 mb-4 mx-auto bg-gradient-to-r from-blueToGreenStart to-blueToGreenEnd rounded-lg">
-      {/* Algoma */}
+    <Timeline className="p-4 mb-4 mx-auto bg-[#F5E663] rounded-lg">
+      {/* Shift AI experience */}
       <Timeline.Item>
         <Timeline.Point icon={FaCalendarAlt} />
         <Timeline.Content>
-          <Timeline.Time className="text-slate-700 font-bold">
-            Jan 2023 - Jul 2024
+          <Timeline.Time className="text-teal-700 font-bold">
+            Sep 2024 - Present
           </Timeline.Time>
-          <Timeline.Title className="text-slate-700 ">
-            Algoma University
-          </Timeline.Title>
-          <Timeline.Body className="text-white ">
-            Graduate Certificate in Project Management
+          <Timeline.Title className="text-black ">Shift AI</Timeline.Title>
+          <Timeline.Body>
+            <ul className="list-disc list-inside text-black ml-4">
+              <li>
+                Developing a fleet management and telematics application using
+                NestJS, React, and PostgreSQL.
+              </li>
+              <li>
+                Leading architecture design, real-time data processing using
+                MQTT, and implementing live communication with web sockets.
+              </li>
+            </ul>
           </Timeline.Body>
+        </Timeline.Content>
+      </Timeline.Item>
 
-          <Timeline.Title className="text-slate-700 ">
-            Projects done in 2023 - 2024
+      {/* House Stack Realty experience */}
+      <Timeline.Item>
+        <Timeline.Point icon={FaCalendarAlt} />
+        <Timeline.Content>
+          <Timeline.Time className="text-teal-700 font-bold">
+            Jul 2024 - Present
+          </Timeline.Time>
+          <Timeline.Title className="text-black ">
+            House Stack Realty
           </Timeline.Title>
           <Timeline.Body>
-            <ul className="list-disc list-inside text-white ml-4">
+            <ul className="list-disc list-inside text-black ml-4">
+              <li>
+                Developed Propsize, a web application for real estate analysis,
+                utilizing Next.js, React, and Postgres.
+              </li>
+              <li>
+                Integrated payment systems with Stripe and built an AI chatbot
+                for property-related tasks using OpenAI, RabbitMQ, and Redis.
+              </li>
+            </ul>
+          </Timeline.Body>
+        </Timeline.Content>
+      </Timeline.Item>
+
+      {/* Freelance Projects */}
+      <Timeline.Item>
+        <Timeline.Point icon={FaCalendarAlt} />
+        <Timeline.Content>
+          <Timeline.Time className="text-teal-700 font-bold">
+            Jan 2023 - Jul 2024
+          </Timeline.Time>
+          <Timeline.Title className="text-black ">
+            Freelance Projects
+          </Timeline.Title>
+          <Timeline.Body>
+            <ul className="list-disc list-inside text-black ml-4">
               <li className="mb-2">
                 <a
                   href="https://github.com/charanreddy24/condo-pulse-repo"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="cursor-pointer underline text-green-900 hover:text-teal-400"
+                  className="cursor-pointer "
                 >
                   Real-Time Chat Application & Security Operations Software:
-                  <br />
                 </a>
+                <br />
                 <span className="text-sm">
                   Developed a comprehensive solution for a Security Company
-                  using the MERN stack, enhancing communication and security
-                  operations for condominiums.
+                  using the React, Express & MongoDB, enhancing communication
+                  and security operations for condominiums.
                 </span>
               </li>
               <li className="mb-2">
@@ -45,16 +86,16 @@ export default function TimelineComponent() {
                   href="https://github.com/sm86/destake/tree/main/react-frontend"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="cursor-pointer underline text-green-900 hover:text-teal-400"
+                  className="cursor-pointer "
                 >
-                  Blockchain Decentralization Visualization: <br />
+                  Blockchain Decentralization Visualization:
                 </a>
+                <br />
                 <span className="text-sm">
                   Led the development of a web application focused on blockchain
-                  research in collaboration with a University of Toronto Ph.D.
-                  student,
-                  <br /> showcasing my ability to translate complex research
-                  into user-friendly interfaces.
+                  research in collaboration with a Ph.D. researcher, showcasing
+                  my ability to translate complex research into user-friendly
+                  interfaces.
                 </span>
               </li>
             </ul>
@@ -66,50 +107,45 @@ export default function TimelineComponent() {
       <Timeline.Item>
         <Timeline.Point icon={FaCalendarAlt} />
         <Timeline.Content>
-          <Timeline.Time className="text-slate-700 font-bold">
+          <Timeline.Time className="text-teal-700 font-bold">
             Jan 2021 - Dec 2022
           </Timeline.Time>
-          <Timeline.Title className="text-slate-700 ">
+          <Timeline.Title className="text-black ">
             Tata Consultancy Services (TCS)
           </Timeline.Title>
-          <Timeline.Body className="text-white ">
-            As a Full Stack Software Developer at TCS, I worked on various
-            projects, including developing network management systems for
-            Ericsson. <br />
-            My role involved full-stack development, system administration, and
-            cloud infrastructure management.
+          <Timeline.Body>
+            <ul className="list-disc list-inside text-black ml-4">
+              <li>
+                Worked on various projects, including developing network
+                management systems for Ericsson.
+              </li>
+              <li>
+                Full-stack development, system administration, and cloud
+                infrastructure management.
+              </li>
+            </ul>
           </Timeline.Body>
         </Timeline.Content>
       </Timeline.Item>
-      {/* Yash company experience */}
+
+      {/* Yash Technologies experience */}
       <Timeline.Item>
         <Timeline.Point icon={FaCalendarAlt} />
         <Timeline.Content>
-          <Timeline.Time className="text-slate-700 font-bold">
+          <Timeline.Time className="text-teal-700 font-bold">
             Jun 2018 - Dec 2020
           </Timeline.Time>
-          <Timeline.Title className="text-slate-700 ">
+          <Timeline.Title className="text-black ">
             Yash Technologies
           </Timeline.Title>
-          <Timeline.Body className="text-white ">
-            At Yash Technologies, I enhanced my expertise in Linux system
-            administration, cloud infrastructure management, <br /> CI/CD
-            automation, and DevOps practices.
-          </Timeline.Body>
-        </Timeline.Content>
-      </Timeline.Item>
-      {/* B.Tech */}
-      <Timeline.Item>
-        <Timeline.Point icon={FaCalendarAlt} />
-        <Timeline.Content>
-          <Timeline.Time className="text-slate-700 font-bold">
-            Jun 2014 - Apr 2018
-          </Timeline.Time>
-          <Timeline.Title className="text-slate-700 ">
-            Jawaharlal Nehru Technological University, Kakinada
-          </Timeline.Title>
-          <Timeline.Body className="text-white ">
-            Bachelor of Technology in Electronics & Communication Engineering
+          <Timeline.Body>
+            <ul className="list-disc list-inside text-black ml-4">
+              <li>
+                Enhanced expertise in Linux system administration, cloud
+                infrastructure management, CI/CD automation, and DevOps
+                practices.
+              </li>
+            </ul>
           </Timeline.Body>
         </Timeline.Content>
       </Timeline.Item>

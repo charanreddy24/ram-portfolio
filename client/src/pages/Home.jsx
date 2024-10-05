@@ -57,17 +57,17 @@ const Home = forwardRef((props, ref) => {
             <div className="text-2xl md:text-pretty md:text-3xl lg:text-xl">
               I'm a
             </div>
-            Full Stack Software Developer
+            Senior Software Engineer
             <div className="text-2xl mt-4 md:text-pretty md:text-3xl lg:text-xl">
               <p>
-                with over 5 years of experience in building and maintaining web
-                applications
+                with over 6 years of experience developing robust, secure, and
+                scalable systems.
               </p>{' '}
               <br />
               <p className="italic">
-                Full Stack Software Developer | Java | JavaScript. Expertise in
-                APIs | microservices | Spring Boot |<br /> JBOSS | AWS | CI/CD |
-                Docker & Kubernetes | Terraform.
+                Full Stack Developer | Java | JavaScript. Expertise in APIs |
+                microservices | Spring Boot | TypeScript | React | NestJS |
+                Node.js |<br /> JBOSS | AWS | CI/CD | Docker & Kubernetes
               </p>
               <p className=" mt-5">
                 Explore my work and get to know more about my skills and
