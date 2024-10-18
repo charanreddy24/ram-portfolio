@@ -15,15 +15,17 @@ const Resume = forwardRef((props, ref) => {
           <div className="max-w-4xl w-11/12 mx-auto text-center">
             <h2 className="text-3xl mb-4">Professional Summary</h2>
             <p>
-              Full Stack Software Developer with over 6 years of experience in
-              Java, MERN & MEAN stacks. Expertise in building and managing APIs,
-              microservices, and backend services using Spring Boot, NestJS, and
-              Node.js. Skilled in AWS cloud services, CI/CD pipelines, Docker,
-              Kubernetes, and Terraform. Proven track record in leading
-              projects, including real-time chat applications, AI-driven tools,
-              and blockchain decentralization solutions, utilizing technologies
-              like React.js, Python, and Spring Boot. Proficient in agile
-              methodologies and ensuring secure, optimized system architectures.
+              Accomplished Senior Software Engineer with over 6 years of
+              experience developing robust, secure, and scalable systems.
+              Specializing in Java, Springboot, JavaScript, TypeScript, React,
+              NestJS, and Node.js, with deep expertise in cloud platforms (AWS)
+              and containerization (Docker, Kubernetes). Proven ability to lead
+              cross-functional teams, mentor junior engineers, and design
+              cloud-agnostic architectures. Skilled in automation, CI/CD
+              practices, and delivering high-quality production systems with a
+              focus on user security and seamless performance. Experienced in
+              optimizing SQL databases and setting up DevOps best practices for
+              enterprise applications.
             </p>
           </div>
         </header>
@@ -32,109 +34,211 @@ const Resume = forwardRef((props, ref) => {
           <div className="max-w-4xl w-11/12 mx-auto py-8">
             <h2 className="text-3xl mb-4">Work Experience</h2>
             <section className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-              {/* Shift AI */}
-              <div className="col-span-3">
-                <h3 className="mb-1 font-semibold">Shift AI</h3>
-                <p className="italic text-teal-700">
-                  Sep 2024 - Present <br /> Full Stack Software Developer
+              {/* Shift AI & House Stack Realty */}
+              <div class="col-span-3">
+                <h3 class="mb-1 font-semibold">
+                  Shift AI & House Stack Realty
+                </h3>
+                <p class="italic text-teal-700">
+                  Jul 2024 - Present <br /> Full Stack Software Developer
                 </p>
               </div>
-              <div className="col-span-3 ml-6">
-                <ul className="list-disc list-inside text-justify space-y-1">
+              <div class="col-span-3 ml-6">
+                <ul class="list-disc list-inside text-justify space-y-1">
+                  <p>
+                    <strong>Project: Shift Fleet Management Software</strong>{' '}
+                    Spearheaded the development of a fleet management and
+                    telematics platform using NestJS, React, and PostgreSQL,
+                    deployed on AWS EC2 with Nginx for hosting frontend files,
+                    and RDS for Database.
+                  </p>
                   <li>
-                    <strong>Fleet Management & Telematics System:</strong>{' '}
-                    Leading the development of a microservices-based fleet
-                    management and telematics platform using NestJS, React, and
-                    PostgreSQL.
+                    Database Design: Designed and implemented complex database
+                    schemas, including ERD and RBAC systems, ensuring secure and
+                    efficient data management.
                   </li>
                   <li>
-                    <strong>Real-Time Communication:</strong> Implemented
-                    real-time communication features using WebSockets and MQTT
-                    for telemetry data processing.
+                    Authentication: Implemented Authentication using Google
+                    OAuth and JWT-based authentication with Passport, issuing
+                    refresh tokens for secure user access.
+                  </li>
+                  <li>
+                    Data Visualization: Developed real-time data visualization
+                    using Chart.js for vehicle data on dashboards, including
+                    custom graphs and speedometers for real-time metrics.
+                  </li>
+                  <li>
+                    Real-time Communication: Integrated Socket.io for live
+                    communication and real-time vehicle tracking, with MQTT for
+                    efficient handling of vehicle telemetry.
+                  </li>
+                  <li>
+                    Microservices Architecture: Built microservices architecture
+                    for real-time vehicle data processing using NestJS and
+                    Prisma ORM for database management.
+                  </li>
+                  <li>
+                    State Management: Utilized Redux for efficient state
+                    management and real-time updates on the frontend.
+                  </li>
+                  <li>
+                    CI/CD Pipelines: Set up automated CI/CD pipelines using
+                    GitHub Actions, writing installation and deployment scripts
+                    for consistent updates.
+                  </li>
+                  <li>
+                    Real-time Notifications: Developed real-time notifications
+                    using Socket.io and Redis for critical vehicle updates.
+                  </li>
+                  <li>
+                    Geolocation: Integrated external services like Mapbox for
+                    real-time vehicle location tracking and route visualization.
+                  </li>
+                  <li>
+                    Testing: Written and executed test cases using Cypress for
+                    frontend and Mockito for backend services.
                   </li>
                 </ul>
               </div>
 
-              {/* House Stack Realty */}
-              <div className="col-span-3">
-                <h3 className="mb-1 font-semibold">House Stack Realty</h3>
-                <p className="italic text-teal-700">
-                  Jul 2024 - Present <br /> Full Stack Software Developer
-                </p>
-              </div>
-              <div className="col-span-3 ml-6">
-                <ul className="list-disc list-inside text-justify space-y-1">
+              <div class="col-span-3 ml-6">
+                <ul class="list-disc list-inside text-justify space-y-1">
+                  <p>
+                    <strong>Project: Propsize</strong> Developed Web
+                    Application, a property analysis tool using Next.js, React,
+                    and Postgres, integrated with Stripe for payments.
+                  </p>
                   <li>
-                    <strong>AI Chatbot Development:</strong> Built an AI-driven
-                    chatbot using OpenAI for property-related tasks, integrated
-                    with RabbitMQ, Redis, and MongoDB.
+                    Backend Services: Built backend services using Node.js and
+                    Express.js, integrating Bull for job processing, and Redis
+                    for caching.
                   </li>
                   <li>
-                    <strong>Real Estate Web App:</strong> Developed Propsize, a
-                    property analysis tool using Next.js, React, and Postgres,
-                    integrated with Stripe for payments.
+                    Email & Phone Verification: Implemented email and phone
+                    verification, Google Authentication using Firebase, and PDF
+                    generation using Puppeteer and HTML2Canvas.
+                  </li>
+                  <li>
+                    Payments: Integrated Stripe for payments, setting up
+                    webhooks for real-time payment status updates.
+                  </li>
+                  <li>
+                    Admin Dashboard: Created an admin dashboard to track user
+                    activity via Google Analytics.
+                  </li>
+                  <li>
+                    CDN & DNS Services: Utilized Cloudfare as CDN for file
+                    hosting and DNS services.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-span-3 ml-6">
+                <ul class="list-disc list-inside text-justify space-y-1">
+                  <p>
+                    <strong>Project: AI Chatbot Development </strong>
+                    Developed a plugin-based AI chatbot to detect user intents
+                    and trigger API calls for property-related tasks using
+                    React.js, Redux, and Node.js.
+                  </p>
+                  <li>
+                    Real-time Communication: Utilized WebSockets for real-time
+                    communication and OpenAI APIs for natural language
+                    processing.
+                  </li>
+                  <li>
+                    Data Storage: Integrated PostgreSQL to store conversations,
+                    intents, and MongoDB for semi-structured data, using
+                    RabbitMQ for message queuing.
                   </li>
                 </ul>
               </div>
 
               {/* TCS */}
-              <div className="col-span-3">
-                <h3 className="mb-1 font-semibold">
+              <div class="col-span-3">
+                <h3 class="mb-1 font-semibold">
                   Tata Consultancy Services (TCS), Hyderabad
                 </h3>
-                <p className="italic text-teal-700">
-                  Dec 2020 to Dec 2022 <br /> Full Stack Software Developer
+                <p class="italic text-teal-700">
+                  Dec 2020 - Dec 2022 <br /> Full Stack Software Developer
                 </p>
               </div>
-              <div className="col-span-3 ml-6">
-                <ul className="list-disc list-inside text-justify space-y-1">
+              <div class="col-span-3 ml-6">
+                <ul class="list-disc list-inside text-justify space-y-1">
+                  <p>
+                    <strong>
+                      Project: Ericsson Network Management System{' '}
+                    </strong>
+                    Collaborated with Ericsson (Ireland) to develop a network
+                    management system using Spring Boot and microservices
+                    architecture.
+                  </p>
+
                   <li>
-                    <strong>Network Management System Development:</strong>{' '}
-                    Partnered with Ericsson (Ireland) on network management
-                    system development.
+                    Frontend Development: Developed web applications with
+                    React.js and JavaScript, ensuring cross-platform
+                    compatibility and performance optimization.
                   </li>
                   <li>
-                    <strong>Frontend Development:</strong> Developed and
-                    maintained modern web applications using HTML5, CSS3,
-                    JavaScript frameworks (Angular, React.js).
+                    Backend Development: Built RESTful APIs with Spring Boot,
+                    implementing JWT tokens for security and automating
+                    deployments on AWS EC2.
                   </li>
                   <li>
-                    <strong>Backend Development:</strong> Built APIs with Spring
-                    Boot and Java, implementing microservices architecture.
+                    AWS Services: Managed AWS services (EC2, VPC, S3, RDS) and
+                    automated deployments using Jenkins pipelines.
                   </li>
                   <li>
-                    <strong>AWS Services:</strong> Leveraged AWS services such
-                    as EC2, S3, RDS, and VPC.
+                    Containerization: Dockerized applications for deployment in
+                    Kubernetes clusters, and used Terraform for infrastructure
+                    provisioning on AWS.
                   </li>
                   <li>
-                    <strong>Containerization:</strong> Dockerized applications
-                    and utilized Kubernetes for orchestration.
+                    Logging & Monitoring: Implemented centralized logging with
+                    the ELK Stack and monitoring with Prometheus and Grafana.
                   </li>
                   <li>
-                    <strong>CI/CD:</strong> Managed pipelines with Jenkins and
-                    used GitHub for version control.
+                    Agile Methodologies: Followed Agile methodologies using Jira
+                    and Gerrit for code reviews, ensuring collaboration and
+                    maintaining high-quality code.
                   </li>
                 </ul>
               </div>
 
               {/* Yash Technologies */}
-              <div className="col-span-3">
-                <h3 className="mb-1 font-semibold">
-                  Yash Technologies, Hyderabad
-                </h3>
-                <p className="italic text-teal-700">
-                  Jun 2018 to Dec 2020 <br /> Software Developer
+              <div class="col-span-3">
+                <h3 class="mb-1 font-semibold">Yash Technologies, Hyderabad</h3>
+                <p class="italic text-teal-700">
+                  Jun 2018 - Dec 2020 <br /> Software Engineer
                 </p>
               </div>
-              <div className="col-span-3 ml-6">
-                <ul className="list-disc list-inside text-justify space-y-1">
+              <div class="col-span-3 ml-6">
+                <ul class="list-disc list-inside text-justify space-y-1">
+                  <p>
+                    <strong>Project: Yash Tech Internal Project </strong>
+                    Developed the Car Booking System for the internal employees
+                    of Yash Technologies using microservices architecture.
+                  </p>
                   <li>
-                    <strong>Server Configuration:</strong> Configured RHEL
-                    servers with advanced hardening techniques.
+                    Server Configuration: Configured RHEL servers with advanced
+                    hardening techniques (node hardening, iptables, SELinux).
                   </li>
                   <li>
-                    <strong>Microservices:</strong> Developed microservices
-                    architecture using Spring Boot and managed with Chef.
+                    Microservices Development: Developed and maintained
+                    microservices architecture using Java Spring Boot.
+                  </li>
+                  <li>
+                    Containerization: Employed Docker and Kubernetes for
+                    containerization and orchestration.
+                  </li>
+                  <li>
+                    CI/CD Pipelines: Managed build automation with Jenkins and
+                    artifact management using Nexus Repository.
+                  </li>
+                  <li>
+                    Security & Monitoring: Implemented system security using
+                    defenses against DDoS attacks, and monitored applications
+                    with Splunk and AWS CloudWatch.
                   </li>
                 </ul>
               </div>

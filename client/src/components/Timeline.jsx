@@ -61,7 +61,7 @@ export default function TimelineComponent() {
             Jan 2023 - Jul 2024
           </Timeline.Time>
           <Timeline.Title className="text-black ">
-            Freelance Projects
+            Personal Projects
           </Timeline.Title>
           <Timeline.Body>
             <ul className="list-disc list-inside text-black ml-4">
